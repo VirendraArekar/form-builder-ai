@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: ${DEV_DATASOURCE_URL:jdbc:h2:mem:formgenius_dev;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1}
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: false
+  flyway:
+    enabled: false

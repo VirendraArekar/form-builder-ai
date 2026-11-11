@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://${DB_HOST:postgres}:${DB_PORT:5432}/${DB_NAME:formgenius}}
+    driver-class-name: org.postgresql.Driver
+    username: ${SPRING_DATASOURCE_USERNAME:${DB_USER:postgres}}
+    password: ${SPRING_DATASOURCE_PASSWORD:${DB_PASSWORD:postgres}}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    validate-on-migrate: false
+    locations: classpath:db/migration

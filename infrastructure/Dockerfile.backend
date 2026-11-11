@@ -1,0 +1,38 @@
+# Multi-stage Dockerfile for FormGenius AI Spring Boot Backend
+
+# Stage 1: Build stage
+FROM maven:3.9.9-eclipse-temurin-21-alpine AS builder
+WORKDIR /app
+
+# Cache Maven dependencies
+COPY backend/pom.xml .
+RUN mvn dependency:go-offline -B
+
+# Copy source code and build production jar
+COPY backend/src ./src
+RUN mvn clean package -DskipTests -B
+
+# Stage 2: Runtime stage
+FROM eclipse-temurin:21-jre-alpine
+WORKDIR /app
+
+# Add unprivileged user for security
+RUN addgroup -S formgenius && adduser -S formgenius -G formgenius
+
+# Copy the built jar from builder stage
+COPY --from=builder /app/target/formgenius-backend-*.jar app.jar
+
+# Set ownership
+RUN chown -R formgenius:formgenius /app
+
+USER formgenius
+
+EXPOSE 8080
+
+ENV JAVA_OPTS="-XX:+UseG1GC -XX:MaxRAMPercentage=75.0 -Djava.security.egd=file:/dev/./urandom"
+ENV SPRING_PROFILES_ACTIVE="prod"
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=40s --retries=3 \
+  CMD wget --quiet --tries=1 --spider http://127.0.0.1:8080/actuator/health || exit 1
+
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]

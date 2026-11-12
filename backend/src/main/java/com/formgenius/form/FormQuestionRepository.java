@@ -1,0 +1,14 @@
+package com.formgenius.form;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.UUID;
+
+@Repository
+public interface FormQuestionRepository extends JpaRepository<FormQuestion, UUID> {
+    List<FormQuestion> findByFormIdOrderByOrderIndexAsc(UUID formId);
+    List<FormQuestion> findBySectionIdOrderByOrderIndexAsc(UUID sectionId);
+    void deleteByFormId(UUID formId);
+}

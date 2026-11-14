@@ -13,6 +13,123 @@
 
 ---
 
+## 📸 Application Screenshots & Visual Tour
+
+### 1. 🚀 Marketing Landing Page
+High-conversion landing page featuring interactive prompt demonstrations, core SaaS capabilities, live interactive previews, and call-to-action shortcuts.
+
+![Marketing Landing Page](docs/screenshots/01-landing-page.png)
+
+---
+
+### 2. 🔐 Authentication & System Showcase
+Split-screen authentication experience featuring platform architecture specifications, active system status indicators, and 1-click demo credential access.
+
+![Login Page](docs/screenshots/02-login-page.png)
+
+---
+
+### 3. 📝 User Registration & Onboarding
+Clean, validated sign-up flow supporting multi-tenant workspace provisioning, company branding, and role assignment.
+
+![Register Page](docs/screenshots/03-register-page.png)
+
+---
+
+### 4. 📊 SaaS Command Center Dashboard
+Centralized workspace dashboard displaying live KPI metrics (total views, submissions, conversion rates), Gemini AI one-sentence prompt generator, and active form cards.
+
+![Dashboard](docs/screenshots/04-dashboard.png)
+
+---
+
+### 5. 📁 Form Management & Lifecycle Filters
+Comprehensive form catalog with quick filtering across All, Published, Drafts, Favorites, and Archived states, full-text search, and actions dropdown.
+
+![Forms List](docs/screenshots/05-forms-list.png)
+
+---
+
+### 6. 🤖 Google Gemini AI Form Generation Engine
+Dedicated natural-language prompt interface with pre-built prompt inspirations, generating complete multi-section forms with schema validation in seconds.
+
+![AI Generator](docs/screenshots/06-ai-generator.png)
+
+---
+
+### 7. 🎨 3-Panel Visual Drag-and-Drop Form Builder
+Production-grade builder featuring:
+- **Left Panel**: 18+ question palette categories + customizable Action Button element.
+- **Center Canvas**: Interactive sortable questions with `@dnd-kit` drag handles, inline labels, and field badges.
+- **Right Panel**: Live properties editor, regex validation, custom error messages, conditional logic jump rules, and theme customizer.
+
+![Form Builder](docs/screenshots/07-form-builder.png)
+
+---
+
+### 8. 📱 Multi-Device Responsive Preview Simulator
+Real-time viewport preview simulator allowing creators to test their forms seamlessly across Desktop, Tablet, and Mobile layouts before publishing.
+
+![Form Preview](docs/screenshots/08-form-preview.png)
+
+---
+
+### 9. 📈 Submissions & Responses Inspector
+Tabular and card-based response viewer with individual answer inspection, reviewer status flags, custom categorization tags, and RFC 4180 CSV export.
+
+![Form Responses](docs/screenshots/09-form-responses.png)
+
+---
+
+### 10. 📊 Visual Analytics & Completion Funnel
+Deep performance analytics featuring daily submissions vs. views timeline curves, device distribution breakdown (Desktop, Mobile, Tablet), and step drop-off funnels.
+
+![Form Analytics](docs/screenshots/10-form-analytics.png)
+
+---
+
+### 11. 🧠 AI Qualitative Insights & Sentiment Analysis
+Gemini-powered NLP engine analyzing submission sentiments, identifying key positive/negative respondent themes, and prescribing actionable recommendations.
+
+![Workspace Insights](docs/screenshots/11-workspace-insights.png)
+
+---
+
+### 12. 📥 Unified Workspace Submissions Inbox
+Cross-form real-time submissions stream allowing operators to search, filter by form, review incoming answers, and triage leads from a single screen.
+
+![Submissions Inbox](docs/screenshots/12-inbox.png)
+
+---
+
+### 13. 📚 Pre-Built Form Template Gallery
+Curated industry blueprint gallery spanning Customer Feedback, Event Registration, Tech Job Applications, Bug Reports, and Employee Pulse Surveys with 1-click cloning.
+
+![Template Gallery](docs/screenshots/13-templates-gallery.png)
+
+---
+
+### 14. 🌐 Live Public Shareable Form
+Distraction-free respondent interface featuring Lush Green branding, section progress indicators, smooth transitions, and instant client-side validation.
+
+![Public Form](docs/screenshots/14-public-form.png)
+
+---
+
+### 15. ⚙️ Form Configuration & Webhook Settings
+Granular form controls including custom URL slug configuration, password gates, scheduling start/end dates, submission limits, and automated email alerts.
+
+![Form Settings](docs/screenshots/15-form-settings.png)
+
+---
+
+### 16. 👤 User Profile & Workspace Preferences
+User profile management with personal details, password security, notification settings, and visual theme selection.
+
+![User Profile](docs/screenshots/16-user-profile.png)
+
+---
+
 ## 🌟 Key Capabilities
 
 ### 1. 🤖 One-Sentence AI Form Generation
